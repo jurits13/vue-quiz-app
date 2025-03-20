@@ -7,16 +7,15 @@
     @nextQuestion="nextQuestion" />
 
     <ResultsQuiz v-if="currentQuestionIndex === questions.length"
-    :score="score" :total="questions.length" />
+    :score="score" 
+    :total="questions.length" />
   </div>
-  
 </template>
 
 <script>
   import questions from "./questions.js";
   import QuestionQuiz from './components/QuestionQuiz.vue';
   import ResultsQuiz from './components/ResultsQuiz.vue';
-import { onUpdated } from "vue";
 
   export default{
     components: {QuestionQuiz, ResultsQuiz},

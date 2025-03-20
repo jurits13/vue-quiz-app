@@ -29,7 +29,7 @@ export default {
         selectAnswer(option) {
             this.selected = option
             this.isCorrect = option === this.questionData.answer
-            this.$emit("updateScore", option)
+            this.$emit("updateScore", this.isCorrect)
         }
     }
 }
