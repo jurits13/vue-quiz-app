@@ -4,11 +4,14 @@
     <QuestionQuiz v-if="currentQuestionIndex < questions.length"
     :questionData="questions[currentQuestionIndex]"
     @updateScore="updateScore"
-    @nextQuestion="nextQuestion" />
+    @nextQuestion="nextQuestion"
+    />
 
     <ResultsQuiz v-if="currentQuestionIndex === questions.length"
     :score="score" 
-    :total="questions.length" />
+    :total="questions.length" 
+    @restartQuiz="restartQuiz"
+    />
   </div>
 </template>
 
@@ -34,6 +37,10 @@
       },
       nextQuestion() {
         this.currentQuestionIndex++;
+      },
+      restartQuiz() {
+        this.score = 0
+        this.currentQuestionIndex = 0
       }
     }
   }
