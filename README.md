@@ -1,5 +1,18 @@
-# Vue 3 + Vite
+# Vue Quiz App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+An interactive quiz application built with Vue.js that tests users' knowledge through multiple-choice questions. The app presents questions one at a time, provides feedback on answers, and displays the final score at the end.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Live Demo
+[Open the Quiz App](https://poetic-halva-e1d567.netlify.app)
+
+## Features
+- Multiple-choice questions with at least three options per question
+- Feedback after each answer (correct or incorrect)
+- Final score summary with a personalized message
+- Responsive layout for desktop and mobile devices
+- Visual design inspired by Statistikaameti CVI (Bonus task)
+
+## Technologies Used
+- Vue.js
+- HTML & CSS
+- JavaScript
